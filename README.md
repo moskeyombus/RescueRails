@@ -12,6 +12,12 @@ RescueRails is the public facing website for Operation Paws for Homes, as well a
 
 ## Developer Notes
 ### Setup in dev
+Install system pre-requisites
+```
+brew install memcached
+```
+
+Clone repo and install gems
 ```
 git clone git@github.com:ophrescue/RescueRails.git
 cd RescueRails
