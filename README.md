@@ -15,12 +15,13 @@ RescueRails is the public facing website for Operation Paws for Homes, as well a
 
     git clone git@github.com:ophrescue/RescueRails.git
     cd RescueRails
+    gem install bundler:1.16.4
     bundle install
 
-Create database.yml file, and use postgres
+Copy the `config/copy.to.database.yml` file to `config/database.yml`, and use postgres
 
-    rake db:setup
-    rake db:seed
+    bundle exec rake db:setup
+    bundle exec rake db:seed
 
 You're also going to need to setup the auto incrementor in postgresql on the dogs.tracking_id column.  Run these commands for both your development and test databases:
 

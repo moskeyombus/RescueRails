@@ -1,0 +1,11 @@
+test:
+  adapter: postgresql
+  database: rescue_rails_development
+  username: postgres
+  password:
+
+test:
+  adapter: postgresql
+  database: rescue_rails_test
+  username: postgres
+  password:
